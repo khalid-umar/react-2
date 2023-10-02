@@ -1,13 +1,15 @@
-import React from 'react';
-import Form from './Form'; // Import the Form component
 
-function HomePage() {
+import Form from "./Form";
+var name = "YourName";
+var email = "xyz@pqr.com";
+
+export default function HomePage() {
   return (
     <div className="Homepage">
-      <h1>Home Page</h1>
-      <Form /> {/* Render the Form component here */}
+      <h1>HomePage</h1>
+      <Form />
     </div>
   );
 }
 
-export default HomePage;
+export { name, email };
