@@ -3,7 +3,9 @@
 function HomePage() {
   return (
     <div className="Homepage">
-      {/* Create a h1 tag and render Form Component here */}
+      <h1>Home Page</h1>
+    <h3>Login Page</h3>
     </div>
   );
 }
+
