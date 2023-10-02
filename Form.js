@@ -1,16 +1,20 @@
+import { name, email } from "./HomePage";
+
+function handleSubmit(e) {
+  e.preventDefault();
+}
+
 const Form = () => (
   <>
     <div>
-      <form>
+      <form onSubmit={handleSubmit}>
         <h3>Login Page</h3>
-        <div>
-          <label>Name:</label>
-          <input type="text" placeholder="Enter your name" />
-        </div>
-        <div>
-          <label>Email:</label>
-          <input type="email" placeholder="Enter your email" />
-        </div>
+        <input type="text" placeholder="Name" value={name} />
+        <br />
+        <br />
+        <input type="email" placeholder="Email" value={email} />
+        <br />
+        <br />
         <button type="submit">Login</button>
       </form>
     </div>
@@ -18,4 +22,3 @@ const Form = () => (
 );
 
 export default Form;
-
